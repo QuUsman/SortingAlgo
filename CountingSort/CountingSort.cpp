@@ -1,19 +1,19 @@
 #include <iostream>
 /*
-  The below Program is a solution of Technical Assesment test given by 
+  The Program below is a solution of Technical Assesment test given by 
                        Envio Systems. 
   
-  Developed by Usman Asghar
+                 
+				  Developed by Usman Asghar 
 
   
   The program is to provide sorting algorithm for given integer array
   
-  with linear time complexcity in order of O(n). 
+  with linear time complexcity in order of O(N). 
 */
 
 
 /* 
-
    All available Sorting algorithms, mostly are Comparison based but
    Radix sort and Counting sort are O(N). They are NOT comparison-based sorts, 
    which have been proven to have O(N log N) lower bound.
@@ -23,7 +23,7 @@
    where k is the range of the numbers to be sorted.
 
    In particular applications like this, where k is fairly small that both Radix sort 
-   and Counting sort exhibit linear-time performance On.
+   and Counting sort exhibit linear-time performance O(N).
    
    So I employeed Counting sort stable version
    
@@ -63,7 +63,7 @@ int main(void)
 void countingSort(int arr[], int length, int range)
 {
 	int i;
-	// Create an array of size length to store sorted array
+	// Create an array of size length to store sorted output
 	int outputArray[length];  // In C++, variable length arrays are not legal. 
 	                          // G++ allows this as an "extension" (because C allows it), so in G++
 
